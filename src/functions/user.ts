@@ -1,7 +1,15 @@
+/*
+ * @Author: Zico
+ * @Date: 2021-03-12 08:52:48
+ * @LastEditors: Zico
+ * @LastEditTime: 2021-03-12 09:24:52
+ * @Description: eBayMonitor Server
+ * @FilePath: \Express-TypeORM-demo\src\functions\user.ts
+ */
 
 import { Request, Response } from 'express';
 import { createConnection } from 'typeorm';
-import { User } from '@/entity/User';
+import { User } from '../entity/User';
 
 export default async function(request: Request, response: Response) {
   const connection = await createConnection();

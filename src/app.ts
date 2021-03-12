@@ -1,8 +1,15 @@
+/*
+ * @Author: Zico
+ * @Date: 2021-03-12 08:52:48
+ * @LastEditors: Zico
+ * @LastEditTime: 2021-03-12 09:29:48
+ * @FilePath: \Express-TypeORM-demo\src\app.ts
+ */
 import "reflect-metadata";              // TypeORM 必须库
 import "module-alias/register";         // 文件引用别名（@/）
 import express from 'express';          // express
 import bodyParser from 'body-parser';   // 请求数据解析
-import router from '@/router';          // router
+import router from './router';          // router
 
 let port = 8753;  // 端口号
 
